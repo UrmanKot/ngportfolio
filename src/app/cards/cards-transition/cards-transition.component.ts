@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { VanillaTilt } from 'vanilla-tilt/dist/vanilla-tilt.js';
-
-import * as VanillaTilt from 'vanilla-tilt/dist/vanilla-tilt.js';
+import { VanillaTilt } from '../../../assets/scripts/vanilla-tilt.js';
 
 @Component({
   selector: 'app-cards-transition',
@@ -10,16 +8,16 @@ import * as VanillaTilt from 'vanilla-tilt/dist/vanilla-tilt.js';
 })
 export class CardsTransitionComponent implements OnInit {
 
-  constructor() { }
-
-  // vanillaTilt = VanillaTilt;
+  constructor(
+  ) { }
 
   ngOnInit(): void {
     VanillaTilt.init(document.querySelectorAll('.cards__item'), {
       max: 25,
-      speed: 400
+      speed: 400,
+      glare: true,
+      'max-glare': 1
     });
-
   }
 
 }
