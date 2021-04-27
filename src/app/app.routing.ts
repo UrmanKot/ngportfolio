@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'cards', loadChildren: () => import('./cards/cards.module').then(m => m.CardsModule) },
   { path: 'other', loadChildren: () => import('./other/other.module').then(m => m.OtherModule) },
+  { path: 'parallax', loadChildren: () => import('./parallax/parallax.module').then(m => m.ParallaxModule) },
 ];
 
 @NgModule({

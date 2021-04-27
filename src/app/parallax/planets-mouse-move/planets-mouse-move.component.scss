@@ -1,0 +1,118 @@
+.planets {
+  overflow-x: hidden;
+  background: #000;
+  height: 100%;
+}
+
+.planets__header {
+  position: fixed;
+  z-index: 100;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.planets__logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+.planets__nav {
+  .planets__links {
+    display: flex;
+  }
+
+  .planets__link {
+    padding: 0 5px;
+
+    img {
+      transform: scale(0.45);
+    }
+  }
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+.planets__bg {
+  left: -30px !important;
+  img {
+    width: 110vw;
+    height: 100vh;
+    filter: brightness(0.6);
+    object-fit: cover;
+  }
+}
+
+.planets__rock-1 {
+  position: absolute !important;
+  left: 10vw !important;
+  top: 20vh !important;
+
+  img {
+    width: 40%;
+    filter: brightness(0.5);
+  }
+}
+
+.planets__earth {
+  position: absolute !important;
+  left: 40vw !important;
+  top: 25vh !important;
+  img {
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    filter: brightness(0.7);
+  }
+}
+
+.planets__text {
+  h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 36vh;
+    left: 35vw;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.planets__mid {
+  left: -150px !important;
+  bottom: -100px !important;
+  top: unset !important;
+
+  img {
+    width: 100%;
+    z-index: 2;
+    left: -20px;
+    top: 20vh !important;
+    filter: brightness(0.8);
+  }
+}
+
+.planets__fore {
+  right: -50px !important;
+  bottom: -200px !important;
+  top: 0px !important;
+  left: unset !important;
+
+  img {
+    width: 400px;
+    height: 110vh;
+    z-index: 3;
+    filter: brightness(0.5);
+    object-fit: cover;
+  }
+}

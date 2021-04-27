@@ -1,0 +1,15 @@
+.space-parallax {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: url('../../../assets/img/parallax/background.jpg') center/cover no-repeat fixed;
+}
+
+.space-parallax__layer {
+  display: flex !important;
+  width: 100%;
+
+  img {
+    margin: 0 auto !important;
+  }
+}
